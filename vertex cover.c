@@ -45,3 +45,16 @@ connected to them! */
  }
  printf("\nTotal vertices in the cover: %d\n", count);
  }
+int main()
+ {
+ // Adjacency Matrix representation (1 = Edge exists, 0 = No edge)
+ int graph[V][V] = {
+ {0, 1, 0, 0, 0},
+ {1, 0, 1, 1, 0},
+ {0, 1, 0, 1, 1},
+ {0, 1, 1, 0, 1},
+ {0, 0, 1, 1, 0}};
+ printf("Executing Vertex Cover Approximation...\n");
+ findVertexCover(graph);
+ return 0;
+ }
